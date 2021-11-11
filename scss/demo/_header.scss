@@ -27,9 +27,12 @@
 		@include media-breakpoint-up(xl) {
 			background-color: transparent;
 		}
-		& + #banner {
+
+		& + #content {
+			position: relative;
+			
 			@include media-breakpoint-up(xl) {
-				top: -$header-height - 1.5rem;
+				top: -$header-height;
 				margin-bottom: -$header-height;
 			}
 		}

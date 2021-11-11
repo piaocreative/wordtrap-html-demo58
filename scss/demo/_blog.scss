@@ -14,19 +14,7 @@
 	font-family: $body-font;
 	line-height: 1 !important;
 
-	&.post-flat {
-		display: flex;
-		
-		.post-thumbnail {
-			flex: 1;
-		}
-
-		.post-content {
-			flex: 1;
-		}
-	}
-
-	.post-mark {
+	.entry-meta {
 		position: absolute;
 		top: 1.219rem;
 		left: 0;
@@ -40,17 +28,21 @@
 		line-height: 1.594rem;
 		text-align: center;
 		z-index: 2;
-	}
+		background-color: #43c7c7;
 
-	.date-bookmarkRibbon {
-		position: absolute;
-		transform: rotate(0deg) skew(0deg); 
-        border-bottom: 0.797rem solid;
-        border-top: 0.797rem solid;
-        border-right: 0.469rem solid transparent;
-        left: 6.796rem;
-        top: 0rem;
-    }
+		&:after {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			transform: rotate(0deg) skew(0deg); 
+			border-bottom: 0.797rem solid;
+			border-top: 0.797rem solid;
+			border-right: 0.469rem solid transparent;
+			left: 6.796rem;
+			top: 0rem;
+			color: #43c7c7;
+		}
+	}
 }
 
 .post-thumbnail {
@@ -71,11 +63,6 @@
 	}
 }
 
-.post-content {
-	position: relative;
-	padding: 1.875rem 0;
-}
-
 .entry-title {
 	h4 {
 		font-family: $body-font;
@@ -88,27 +75,6 @@
 			&:hover { color: $theme-color; }
 		}
 	}
-}
-
-.entry-meta {
-	list-style: none;
-	margin-bottom: 1.25rem;
-
-	li {
-		i {
-			color: rgba($theme-color, 0.5);
-			margin-right: 0.75rem;
-		}
-
-		a {
-			font-weight: 300;
-		}
-	}
-}
-
-.entry-content { 
-	position: relative; 
-	margin-bottom: 3.125rem;
 }
 
 .entry-link {

@@ -1,0 +1,51 @@
+.error-404 {
+	h2 {
+		color: $theme-color;
+		font-size: 8.67rem;
+		font-weight: 700;
+		line-height: 6.7rem;
+	}
+
+	h5 {
+		color: $topbar-color;
+		font-size: 0.875rem;
+		font-weight: 700;
+		margin-top: 3.234rem;
+		margin-bottom: 1.1875rem;
+	}
+
+	ul{
+		li {
+            a {
+                color: $topbar-color;
+                font-size: 1rem;
+                font-family: $body-font;
+                font-weight: 300;
+                margin : 0rem;
+                line-height:2.906rem;
+                i {
+                    margin-left: 0.469rem;
+                    opacity: 0;
+                    color: $theme-color;
+                    transition: all 0.3s ease-in-out;
+                }
+                &.current,
+                &:hover {
+                    a {
+                        font-size: 0.999rem;
+                        color: $theme-color;
+                    }
+                    i {
+                        opacity: 1;
+                    }
+                }
+            }
+		}
+
+		hr {
+			color: transparent;
+			border-top: 0.09375rem dotted $theme-color;
+			margin: 0rem;
+		}
+	}
+}

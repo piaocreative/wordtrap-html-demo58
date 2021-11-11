@@ -31,17 +31,6 @@ $heading-font:                  'Roboto Slab', 'Sans Serif';
 $primary:                       $theme-color;
 $secondary:                     $heading-color;
 
-// Spacer
-$spacer: 1rem !default;
-$spacers: (
-  0: 0,
-  1: $spacer / 4,
-  2: $spacer / 2,
-  3: $spacer,
-  4: $spacer * 1.25,
-  5: $spacer * 2,
-) !default;
-
 // Link
 $link-color:                    $heading-color;
 $link-decoration:				        none;
@@ -93,6 +82,10 @@ $input-btn-font-size-lg:        0.875rem;
 
 $input-btn-line-height:         1;
 
+$input-border-radius:           0rem;
+$input-border-radius-sm:        0rem;
+$input-border-radius-lg:        1.83rem;
+
 $input-btn-focus-width:         1px;
 $input-focus-border-color:      $theme-color;
 
@@ -107,7 +100,7 @@ $topbar-hover-color:            $theme-color;
 
 //-------------------- Header --------------------//
 
-$header-height:                 5.875rem;
+$header-height:                 8rem;
 
 // Sticky Header
 $sticky-header-height:          3.75rem;
